@@ -34,7 +34,7 @@ class FontSize(object):
     def _calc_table_sizes(self):
         tables = self.get_table_tags()
         for table in tables:
-            self.tables[table] = len(self.ttfont.getTableData(table))
+            self.tables[table] = self.ttfont.reader.tables[table].length
 
     def get_table_tags(self):
         if self.ttfont.reader:
