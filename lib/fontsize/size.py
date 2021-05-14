@@ -37,10 +37,4 @@ class FontSize(object):
             self.tables[table] = self.ttfont.reader.tables[table].length
 
     def get_table_tags(self):
-        if self.ttfont.reader:
-            return list(self.ttfont.reader.keys())
-        else:
-            table_tags = list(self.ttfont.tables.keys())
-            if "GlyphOrder" in table_tags:
-                table_tags.remove("GlyphOrder")
-            return table_tags
+        return [tag for tag in self.ttfont.keys() if tag != "GlyphOrder"]
