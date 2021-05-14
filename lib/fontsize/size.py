@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+import os
+
+from fontTools.ttLib import TTFont
+
+
+class FontSize(object):
+    def __init__(self, filepath):
+        self.total_bytes = 0
+        self.encoded_glyphs = 0
+        self.total_glyphs = 0
+        self.per_enc_glyph_bytes = 0.0
+        self.per_total_glyph_bytes = 0.0
+        self.tables = {}
+        self.filepath = filepath
+        self.ttfont = TTFont(filepath)
+        self._calculate_sizes()
+
+    def _calculate_sizes(self):
+        self.total_bytes = os.path.getsize(self.filepath)
+        self._calc_per_encoded_glyph_size()
+        self._calc_per_total_glyph_size()
+
+    def _calc_per_encoded_glyph_size(self):
+        self.encoded_glyphs = len(self.ttfont.getBestCmap())
+        self.per_enc_glyph_bytes = self.total_bytes / self.encoded_glyphs
+
+    def _calc_per_total_glyph_size(self):
+        self.total_glyphs = len(self.ttfont.getGlyphSet())
+        self.per_total_glyph_bytes = self.total_bytes / self.total_glyphs
+
+    def get_table_tags(self):
+        if self.ttfont.reader:
+            return list(self.ttfont.reader.keys())
+        else:
+            table_tags = list(self.ttfont.tables.keys())
+            if "GlyphOrder" in table_tags:
+                table_tags.remove("GlyphOrder")
+            return table_tags
