@@ -7,7 +7,6 @@ import sys
 from rich.console import Console
 from rich.table import Table
 
-
 from . import __version__
 from .size import FontSize
 
