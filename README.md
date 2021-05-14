@@ -11,7 +11,7 @@ font-size is a Python 3.6+ command line executable tool that reports *.otf, *.tt
 
 ## Installation
 
-`font-size` requires a Python 3.6+ interpreter.
+`font-size` requires a Python 3.6+ interpreter and runs on Linux distros, macOS, and Windows.
 
 Installation in a [Python3 virtual environment](https://docs.python.org/3/library/venv.html) is recommended as dependencies are pinned to versions that are confirmed to work with this project.
 
