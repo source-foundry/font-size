@@ -1,4 +1,4 @@
-## font-size
+# font-size
 
 [![PyPI](https://img.shields.io/pypi/v/font-size?color=blueviolet&label=PyPI&logo=python&logoColor=white)](https://pypi.org/project/font-size/)
 [![GitHub license](https://img.shields.io/github/license/source-foundry/font-size?color=blue)](https://github.com/source-foundry/font-size/blob/master/LICENSE)
