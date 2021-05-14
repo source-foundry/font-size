@@ -83,7 +83,10 @@ Unit test coverage is executed with the `coverage` tool. See the Makefile `test-
 
 ## Acknowledgments
 
-`font-size` is built with the fantastic [fontTools free software library](https://github.com/fonttools/fonttools).
+⚡ Powered by these fantastic free tools:
+
+- [fontTools free software library](https://github.com/fonttools/fonttools)
+- [rich Python package](https://github.com/willmcgugan/rich)
 
 ## License
 
