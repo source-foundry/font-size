@@ -22,4 +22,4 @@ jobs:
         uses: py-actions/flake8@v1
         with:
           max-line-length: "90"
-          path: "lib/font-size"
+          path: "lib/fontsize"
