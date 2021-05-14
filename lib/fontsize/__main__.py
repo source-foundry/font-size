@@ -52,6 +52,7 @@ def run(argv):
             )
             sys.exit(1)
 
+        print()
         console.print(f"[green]{fontpath}[/]\n")
 
         table = Table(
@@ -92,4 +93,3 @@ def run(argv):
             table_ottables.add_row(f"{tt_table}", f"{size}", f"{percent_size:.3f}")
         print()
         console.print(table_ottables)
-        print()
