@@ -1,7 +1,12 @@
 all: install
 
 black:
-	black -l 90 lib/font-size/*.py
+	black -l 90 lib/fontsize/*.py
+
+import-format:
+	isort lib
+
+format: import-format black
 
 clean:
 	- rm dist/*.whl dist/*.tar.gz dist/*.zip
@@ -24,20 +29,20 @@ install-user:
 test: test-lint test-type-check test-unit
 
 test-coverage:
-	coverage run --source font-size -m py.test
+	coverage run --source fontsize -m py.test
 	coverage report -m
 #	coverage html
 
 test-lint:
-	flake8 --ignore=W50 lib/font-size
+	flake8 --ignore=W50 lib/fontsize
 
 test-type-check:
-	mypy lib/font-size
+	mypy lib/fontsize
 
 test-unit:
 	tox
 
 uninstall:
-	pip3 uninstall --yes font-size
+	pip3 uninstall --yes fontsize
 
-.PHONY: all black clean dist-build dist-push install install-dev install-user test test-lint test-type-check test-unit uninstall
+.PHONY: all black clean dist-build dist-push format import-format install install-dev install-user test test-lint test-type-check test-unit uninstall
