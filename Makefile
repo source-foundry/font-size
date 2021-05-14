@@ -26,7 +26,7 @@ install-dev:
 install-user:
 	pip3 install --ignore-installed --user .
 
-test: test-lint test-type-check test-unit
+test: test-lint test-unit
 
 test-coverage:
 	coverage run --source fontsize -m py.test
@@ -36,8 +36,6 @@ test-coverage:
 test-lint:
 	flake8 --ignore=W50 lib/fontsize
 
-test-type-check:
-	mypy lib/fontsize
 
 test-unit:
 	tox
