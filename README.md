@@ -10,7 +10,8 @@
 
 font-size is a Python 3.6+ command line executable tool that reports *.otf, *.ttf, *.woff, and *.woff2 file and individual OpenType table sizes in a clean tabular format.
 
-<img width="625" alt="Image of a font-size report in the terminal" src="https://user-images.githubusercontent.com/4249591/118226931-ae095880-b455-11eb-9fb9-f1d5a5fb928b.png">
+<img width="500" alt="2021-05-14_12-52-13" src="https://user-images.githubusercontent.com/4249591/118303390-644f5b00-b4b3-11eb-9489-58efa7f1c5f5.png">
+<img width="500" alt="2021-05-14_12-52-58" src="https://user-images.githubusercontent.com/4249591/118303392-64e7f180-b4b3-11eb-995e-ef951287c314.png">
 
 ## Installation
 
