@@ -86,7 +86,7 @@ Unit test coverage is executed with the `coverage` tool. See the Makefile `test-
 ⚡ Powered by these fantastic free tools:
 
 - [fontTools Python library](https://github.com/fonttools/fonttools)
-- [rich Python package](https://github.com/willmcgugan/rich)
+- [rich Python library](https://github.com/willmcgugan/rich)
 
 ## License
 
