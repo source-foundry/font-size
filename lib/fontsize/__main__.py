@@ -74,8 +74,6 @@ def run(argv):
         console.print(table)
 
         tt_tables = fontsize.get_table_tags()
-        for tt_table in tt_tables:
-            fontsize.tables[tt_table] = len(fontsize.ttfont.getTableData(tt_table))
 
         table_ottables = Table(
             title="OpenType Table Sizes",
