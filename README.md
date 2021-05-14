@@ -1,5 +1,6 @@
 ## font-size
 
+[![PyPI](https://img.shields.io/pypi/v/font-size?color=blueviolet&label=PyPI&logo=python&logoColor=white)](https://pypi.org/project/font-size/)
 [![Python CI](https://github.com/source-foundry/font-size/actions/workflows/py-ci.yml/badge.svg)](https://github.com/source-foundry/font-size/actions/workflows/py-ci.yml)
 [![Python Lints](https://github.com/source-foundry/font-size/actions/workflows/py-lint.yml/badge.svg)](https://github.com/source-foundry/font-size/actions/workflows/py-lint.yml)
 
