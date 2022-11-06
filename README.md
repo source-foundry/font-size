@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/source-foundry/font-size?color=blue)](https://github.com/source-foundry/font-size/blob/master/LICENSE)
 [![Python CI](https://github.com/source-foundry/font-size/actions/workflows/py-ci.yml/badge.svg)](https://github.com/source-foundry/font-size/actions/workflows/py-ci.yml)
 [![Python Lints](https://github.com/source-foundry/font-size/actions/workflows/py-lint.yml/badge.svg)](https://github.com/source-foundry/font-size/actions/workflows/py-lint.yml)
-[![CodeQL](https://github.com/source-foundry/font-size/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/source-foundry/font-size/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/source-foundry/font-size/actions/workflows/codeql.yml/badge.svg)](https://github.com/source-foundry/font-size/actions/workflows/codeql.yml)
 
 ## About
 
